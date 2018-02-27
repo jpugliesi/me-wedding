@@ -32,8 +32,13 @@ body {
   #intro h1 {
     font-size: 3.5em; }
 
+.image-shadow {
+  box-shadow: 6px 6px 6px -6px #0a0a0a; }
+
 .info-column {
   font-size: 1.5em; }
+  .info-columnp {
+    margin: 1em 0em; }
 
 .pad {
   padding: 1.5em; }
