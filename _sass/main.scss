@@ -32,6 +32,18 @@ $primary-invert: $pink-invert;
   src: url('fonts/dustismo_roman.ttf') format('truetype'),
 }
 
+.autumn {
+  font-family: 'Autumn', serif;
+}
+
+.dustismo {
+  font-family: 'Dustismo', sans-serif;
+}
+
+body {
+  background: url('../images/bedge-bg.png') repeat;
+}
+
 .main-bg {
   @extend .hero;
   background-color: $white;
@@ -39,11 +51,7 @@ $primary-invert: $pink-invert;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-
-  @include touch {
-    height: 100%;
-  }
+  background-size: auto 100;
 }
 
 #main-title-mobile {
@@ -53,9 +61,13 @@ $primary-invert: $pink-invert;
 
 #intro {
   h1 {
-    font-size: 1em;
+    font-size: 3.5em;
   }
-  margin: 1em 0em;
+  margin: 2em 0em;
+}
+
+.info-column {
+  font-size: 1.5em;
 }
 
 .pad {
@@ -63,20 +75,13 @@ $primary-invert: $pink-invert;
 }
 
 .main-title {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 .slow-fade {
   animation-duration: 2s;
 }
 
-.autumn {
-  font-family: 'Autumn', serif;
-}
-
-.dustismo {
-  font-family: 'Dustismo', sans-serif;
-}
 
 .centered {
   text-align: center;

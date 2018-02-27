@@ -6,37 +6,43 @@
   font-family: 'Dustismo';
   src: url("fonts/dustismo_roman.ttf") format("truetype"); }
 
+.autumn {
+  font-family: 'Autumn', serif; }
+
+.dustismo {
+  font-family: 'Dustismo', sans-serif; }
+
+body {
+  background: url("../images/bedge-bg.png") repeat; }
+
 .main-bg {
   background-color: white;
   background: url("../images/bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: auto 100; }
 
 #main-title-mobile {
   font-size: 2em;
   margin: 1em; }
 
 #intro {
-  margin: 1em 0em; }
+  margin: 2em 0em; }
   #intro h1 {
-    font-size: 1em; }
+    font-size: 3.5em; }
+
+.info-column {
+  font-size: 1.5em; }
 
 .pad {
   padding: 1.5em; }
 
 .main-title {
-  font-size: 4em; }
+  font-size: 3.5em; }
 
 .slow-fade {
   animation-duration: 2s; }
-
-.autumn {
-  font-family: 'Autumn', serif; }
-
-.dustismo {
-  font-family: 'Dustismo', sans-serif; }
 
 .centered {
   text-align: center; }
