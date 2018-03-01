@@ -12,7 +12,7 @@
 .dustismo {
   font-family: 'Dustismo', sans-serif; }
 
-body {
+html {
   background: url("../images/bedge-bg.png") repeat; }
 
 .main-bg {
@@ -21,7 +21,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: auto 100; }
+  background-size: cover; }
 
 #main-title-mobile {
   font-size: 2em;
@@ -31,6 +31,9 @@ body {
   margin: 2em 0em; }
   #intro h1 {
     font-size: 3.5em; }
+    @media screen and (max-width: 1023px) {
+      #intro h1 {
+        font-size: 1.5em; } }
 
 .image-shadow {
   box-shadow: 6px 6px 6px -6px #0a0a0a; }

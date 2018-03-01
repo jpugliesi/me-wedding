@@ -22,6 +22,26 @@ $family-sans-serif: "Helvetica", "Arial", sans-serif;
 $primary: $pink;
 $primary-invert: $pink-invert;
 
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 @font-face {
   font-family: 'Autumn';
   src: url('fonts/autumn_in_november.ttf') format('truetype'),
@@ -40,7 +60,7 @@ $primary-invert: $pink-invert;
   font-family: 'Dustismo', sans-serif;
 }
 
-body {
+html {
   background: url('../images/bedge-bg.png') repeat;
 }
 
@@ -51,7 +71,8 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: auto 100;
+  background-size: cover;
+
 }
 
 #main-title-mobile {
@@ -61,7 +82,12 @@ body {
 
 #intro {
   h1 {
+
     font-size: 3.5em;
+
+    @include touch {
+      font-size: 1.5em;
+    }
   }
   margin: 2em 0em;
 }
