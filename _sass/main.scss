@@ -62,6 +62,10 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  @include touch {
+    background-position: 60%;
+  }
 }
 
 .footer-bg {
@@ -76,10 +80,7 @@ html {
   }
 
   @include touch {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: contain;
+    background-position: 30%;
   }
 }
 
