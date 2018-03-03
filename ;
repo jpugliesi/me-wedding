@@ -83,7 +83,7 @@ html {
   }
 }
 
-#header-title {
+#t {
   line-height: 1.2;
 }
 
