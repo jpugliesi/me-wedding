@@ -30,16 +30,14 @@ html {
 
 .footer-bg {
   background-color: white;
-  background: url("../images/forest-small.jpg") no-repeat center center; }
-  @media screen and (min-width: 1024px) {
-    .footer-bg {
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; } }
+  background: url("../images/forest-small.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   @media screen and (max-width: 1023px) {
     .footer-bg {
-      background-position: 30%; } }
+      background-position: 25%; } }
 
 #header-title {
   line-height: 1.2; }
@@ -77,6 +75,10 @@ html {
 
 .image-shadow {
   box-shadow: 6px 6px 6px -6px #0a0a0a; }
+
+@media screen and (min-width: 769px), print {
+  .info-column {
+    margin: 0 2em; } }
 
 .info-columnp {
   margin: 1em 0em; }

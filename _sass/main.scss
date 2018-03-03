@@ -72,15 +72,13 @@ html {
   background-color: $white;
   background: url('../images/forest-small.jpg') no-repeat center center;
 
-  @include desktop {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   @include touch {
-    background-position: 30%;
+    background-position: 25%;
   }
 }
 
@@ -141,6 +139,10 @@ html {
 }
 
 .info-column {
+
+  @include tablet {
+    margin: 0 2em;
+  }
   &p {
     margin: 1em 0em;
   }
