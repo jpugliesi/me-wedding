@@ -77,12 +77,25 @@ html {
 .image-shadow {
   box-shadow: 6px 6px 6px -6px #0a0a0a; }
 
+@media screen and (max-width: 768px) {
+  #location-section {
+    padding-top: 0; } }
+
+@media screen and (max-width: 1023px) {
+  .main-section {
+    padding-top: 0;
+    padding-bottom: 0; } }
+
 @media screen and (min-width: 769px), print {
   .info-column {
     margin: 0 2em; } }
 
 .info-columnp {
   margin: 1em 0em; }
+
+@media screen and (max-width: 1023px) {
+  .content-column {
+    margin-top: 1em; } }
 
 #book-button {
   margin: 2em 0em; }

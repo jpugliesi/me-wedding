@@ -139,13 +139,33 @@ html {
   box-shadow: 6px 6px 6px -6px $black;
 }
 
+#location-section {
+  @include mobile {
+    padding-top: 0;
+  }
+}
+
+.main-section {
+  @include touch {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .info-column {
 
   @include tablet {
     margin: 0 2em;
   }
+
   &p {
     margin: 1em 0em;
+  }
+}
+
+.content-column {
+  @include touch {
+    margin-top: 1em;
   }
 }
 
