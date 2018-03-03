@@ -97,7 +97,7 @@ html {
 
   #header-title, #subtitle {
     @include desktop {
-      font-size: 4em;
+      font-size: 3em;
       line-height: 1.2;
     }
 
@@ -153,10 +153,6 @@ html {
 }
 
 .info-column {
-
-  @include tablet {
-    margin: 0 2em;
-  }
 
   &p {
     margin: 1em 0em;
