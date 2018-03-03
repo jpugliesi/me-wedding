@@ -25,11 +25,20 @@ html {
 
 .main-title {
   padding: 3.5em; }
+  @media screen and (min-width: 1024px) {
+    .main-title .title, .main-title .subtitle {
+      font-size: 5em; } }
+  .main-title .subtitle {
+    padding-left: 10px; }
+    @media screen and (min-width: 1024px) {
+      .main-title .subtitle {
+        padding-left: 25px; } }
 
 #intro {
   margin: 2em 0em; }
-  #intro h1 {
-    font-size: 3.5em; }
+  @media screen and (min-width: 1024px) {
+    #intro .title {
+      font-size: 5em; } }
 
 .image-shadow {
   box-shadow: 6px 6px 6px -6px #0a0a0a; }
