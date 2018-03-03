@@ -22,24 +22,12 @@ $family-sans-serif: "Helvetica", "Arial", sans-serif;
 $primary: $pink;
 $primary-invert: $pink-invert;
 
-@mixin for-phone-only {
-  @media (max-width: 599px) { @content; }
+@mixin smaller-than-cover {
+  @media (max-width: 1299px) { @content; }
 }
 
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
-}
-
-@mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
-}
-
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+@mixin larger-than-cover {
+  @media (min-width: 1300px) { @content; }
 }
 
 @font-face {
@@ -65,30 +53,23 @@ html {
 }
 
 .main-bg {
-  @extend .hero;
   background-color: $white;
-  background: url('../images/bg.jpg') no-repeat center center;
+  background: url('../images/32.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
-#main-title-mobile {
-  font-size: 2em;
-  margin: 1em;
+.main-title {
+  padding: 3.5em;
 }
 
 #intro {
   h1 {
-
     font-size: 3.5em;
-
-    @include touch {
-      font-size: 1.5em;
-    }
   }
+
   margin: 2em 0em;
 }
 
@@ -106,10 +87,6 @@ html {
 
 .pad {
   padding: 1.5em;
-}
-
-.main-title {
-  font-size: 3.5em;
 }
 
 .slow-fade {
