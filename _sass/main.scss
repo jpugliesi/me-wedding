@@ -62,6 +62,14 @@ html {
   background-size: cover;
 }
 
+.footer-bg {
+  background-color: $white;
+  background: url('../images/forest-small.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .main-title {
   padding: 3.5em;
 
@@ -102,6 +110,10 @@ html {
 
 #book-button {
   margin: 2em 0em;
+}
+
+#forest {
+  transform: scaleY(-1);
 }
 
 .pad {
