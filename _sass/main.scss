@@ -68,6 +68,11 @@ html {
   background-size: cover;
 
   @include touch {
+    background: url('../images/bg-mobile.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-position: 60%;
   }
 }
@@ -75,7 +80,7 @@ html {
 .footer-bg {
   margin-bottom: 4em;
   background-color: $white;
-  background: url('../images/forest-small.jpg') no-repeat center center;
+  background: url('../images/forest.jpg') no-repeat center center;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -83,6 +88,11 @@ html {
   background-size: cover;
 
   @include touch {
+    background: url('../images/forest-mobile.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-position: 25%;
   }
 }
