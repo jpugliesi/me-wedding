@@ -55,6 +55,10 @@ html {
   background: url('../images/bedge-bg.png') repeat;
 }
 
+#header {
+  animation-duration: 2s;
+}
+
 .main-bg {
   background-color: $white;
   background: url('../images/bg.jpg') no-repeat center center;
@@ -87,8 +91,9 @@ html {
   line-height: 1.2;
 }
 
-.main-title {
+#main-title {
   padding: 3.5em;
+  animation-delay: 1s;
 
   @include mobile {
     padding: 0;
