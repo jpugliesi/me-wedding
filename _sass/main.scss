@@ -171,6 +171,12 @@ html {
       padding-bottom: 2em;
     }
   }
+
+  #accomodations-title {
+    @include mobile {
+      font-size: 2.4rem !important;
+    }
+  }
 }
 
 #registry-section {

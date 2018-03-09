@@ -110,6 +110,9 @@ html {
     #accomodations-section #accomodations-content-column {
       padding-top: 2em;
       padding-bottom: 2em; } }
+  @media screen and (max-width: 768px) {
+    #accomodations-section #accomodations-title {
+      font-size: 2.4rem !important; } }
 
 #registry-section {
   padding-top: 1em;
