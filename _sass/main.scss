@@ -23,14 +23,6 @@ $family-sans-serif: "Helvetica", "Arial", sans-serif;
 $primary: $pink;
 $primary-invert: $pink-invert;
 
-@mixin smaller-than-cover {
-  @media (max-width: 1299px) { @content; }
-}
-
-@mixin larger-than-cover {
-  @media (min-width: 1300px) { @content; }
-}
-
 @font-face {
   font-family: 'Autumn';
   src: url('fonts/autumn_in_november.ttf') format('truetype'),
@@ -156,9 +148,18 @@ html {
 
 .image-shadow {
   box-shadow: 6px 6px 6px -6px $black;
+  border-radius: 5px;
+}
+
+.me-section {
+  @extend .section;
+  padding-bottom: 1em;
 }
 
 #location-section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
   @include mobile {
     padding-top: 0;
   }
@@ -172,9 +173,17 @@ html {
 }
 
 #accomodations-section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
   @include touch {
     padding-bottom: 0;
   }
+}
+
+#registry-section {
+  padding-top: 1em;
+  padding-bottom: 3em;
 }
 
 .main-section {
@@ -199,6 +208,7 @@ html {
 
 #book-button {
   margin: 2em 0em;
+  border-radius: 5px;
 
   @include desktop {
     margin: 2em;

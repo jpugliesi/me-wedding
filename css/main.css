@@ -92,18 +92,32 @@ html {
       font-size: 5em; } }
 
 .image-shadow {
-  box-shadow: 6px 6px 6px -6px #0a0a0a; }
+  box-shadow: 6px 6px 6px -6px #0a0a0a;
+  border-radius: 5px; }
 
-@media screen and (max-width: 768px) {
-  #location-section {
-    padding-top: 0; } }
+.me-section {
+  padding-bottom: 1em; }
+
+#location-section {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  @media screen and (max-width: 768px) {
+    #location-section {
+      padding-top: 0; } }
 
 #ceremony-section {
   margin-bottom: 2em; }
 
-@media screen and (max-width: 1023px) {
-  #accomodations-section {
-    padding-bottom: 0; } }
+#accomodations-section {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  @media screen and (max-width: 1023px) {
+    #accomodations-section {
+      padding-bottom: 0; } }
+
+#registry-section {
+  padding-top: 1em;
+  padding-bottom: 3em; }
 
 @media screen and (max-width: 1023px) {
   .main-section {
@@ -118,7 +132,8 @@ html {
     margin-top: 1em; } }
 
 #book-button {
-  margin: 2em 0em; }
+  margin: 2em 0em;
+  border-radius: 5px; }
   @media screen and (min-width: 1024px) {
     #book-button {
       margin: 2em; } }
@@ -6640,12 +6655,12 @@ label.panel-block {
   flex-shrink: 0;
   padding: 3rem 1.5rem; }
 
-.section {
+.section, .me-section {
   padding: 3rem 1.5rem; }
   @media screen and (min-width: 1024px) {
-    .section.is-medium {
+    .section.is-medium, .is-medium.me-section {
       padding: 9rem 1.5rem; }
-    .section.is-large {
+    .section.is-large, .is-large.me-section {
       padding: 18rem 1.5rem; } }
 
 .footer {
