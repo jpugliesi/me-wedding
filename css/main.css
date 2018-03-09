@@ -106,6 +106,10 @@ html {
   @media screen and (max-width: 1023px) {
     #accomodations-section {
       padding-bottom: 0; } }
+  @media screen and (max-width: 768px) {
+    #accomodations-section #accomodations-content-column {
+      padding-top: 2em;
+      padding-bottom: 2em; } }
 
 #registry-section {
   padding-top: 1em;

@@ -157,15 +157,19 @@ html {
   margin-bottom: 2em;
 }
 
-#ceremony-title {
-}
-
 #accomodations-section {
   padding-top: 1em;
   padding-bottom: 1em;
 
   @include touch {
     padding-bottom: 0;
+  }
+
+  #accomodations-content-column {
+    @include mobile {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
   }
 }
 
