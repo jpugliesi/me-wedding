@@ -164,6 +164,13 @@ html {
   }
 }
 
+#ceremony-section {
+  margin-bottom: 2em;
+}
+
+#ceremony-title {
+}
+
 #accomodations-section {
   @include touch {
     padding-bottom: 0;
@@ -192,6 +199,10 @@ html {
 
 #book-button {
   margin: 2em 0em;
+
+  @include desktop {
+    margin: 2em;
+  }
 }
 
 #forest {

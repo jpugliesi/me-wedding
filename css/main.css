@@ -98,6 +98,9 @@ html {
   #location-section {
     padding-top: 0; } }
 
+#ceremony-section {
+  margin-bottom: 2em; }
+
 @media screen and (max-width: 1023px) {
   #accomodations-section {
     padding-bottom: 0; } }
@@ -116,6 +119,9 @@ html {
 
 #book-button {
   margin: 2em 0em; }
+  @media screen and (min-width: 1024px) {
+    #book-button {
+      margin: 2em; } }
 
 #forest {
   transform: scaleY(-1); }
