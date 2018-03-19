@@ -152,13 +152,17 @@ html {
   margin-bottom: 1.5em; }
   @media screen and (min-width: 1024px) {
     #macys-button {
-      margin: 1.4em; } }
+      margin: 1.4em;
+      height: 45px;
+      width: 336.8px; } }
 
 #ws-button {
   margin-bottom: 1em; }
   @media screen and (min-width: 1024px) {
     #ws-button {
-      margin: 1.4em; } }
+      margin: 1.4em;
+      height: 45px;
+      width: 336.8px; } }
 
 #forest {
   transform: scaleY(-1); }

@@ -241,6 +241,8 @@ html {
 
   @include desktop {
     margin: 1.4em;
+    height: 45px;
+    width: 336.8px;
   }
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -249,6 +251,8 @@ html {
 #ws-button {
   @include desktop {
     margin: 1.4em;
+    height: 45px;
+    width: 336.8px;
   }
   margin-bottom: 1em;
 }
