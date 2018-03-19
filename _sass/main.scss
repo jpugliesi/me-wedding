@@ -23,6 +23,15 @@ $family-sans-serif: "Helvetica", "Arial", sans-serif;
 $primary: $pink;
 $primary-invert: $pink-invert;
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin v-tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
 @font-face {
   font-family: 'Autumn';
   src: url('fonts/autumn_in_november.ttf') format('truetype'),
@@ -117,6 +126,12 @@ html {
     }
   }
 
+  #subtitle {
+    @include desktop {
+      padding-left: 0.5em;
+    }
+  }
+
   #header-title {
     @include mobile {
       margin-bottom: 1rem;
@@ -199,9 +214,14 @@ html {
 }
 
 .content-column {
-  @include touch {
+  @include mobile {
     margin-top: 1em;
   }
+
+  @include v-tablet {
+    padding: 0em 9em !important;
+  }
+
 }
 
 #book-button {
@@ -211,6 +231,26 @@ html {
   @include desktop {
     margin: 2em;
   }
+}
+
+.registry-button {
+  border-radius: 5px;
+}
+
+#macys-button {
+
+  @include desktop {
+    margin: 1.4em;
+  }
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#ws-button {
+  @include desktop {
+    margin: 1.4em;
+  }
+  margin-bottom: 1em;
 }
 
 #forest {

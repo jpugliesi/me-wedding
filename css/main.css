@@ -73,6 +73,9 @@ html {
   @media screen and (max-width: 1023px) {
     #main-title #header-title, #main-title #subtitle {
       line-height: 1.4; } }
+  @media screen and (min-width: 1024px) {
+    #main-title #subtitle {
+      padding-left: 0.5em; } }
   @media screen and (max-width: 768px) {
     #main-title #header-title {
       margin-bottom: 1rem; } }
@@ -126,9 +129,13 @@ html {
 .info-columnp {
   margin: 1em 0em; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .content-column {
     margin-top: 1em; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-column {
+    padding: 0em 9em !important; } }
 
 #book-button {
   margin: 2em 0em;
@@ -136,6 +143,22 @@ html {
   @media screen and (min-width: 1024px) {
     #book-button {
       margin: 2em; } }
+
+.registry-button {
+  border-radius: 5px; }
+
+#macys-button {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+  @media screen and (min-width: 1024px) {
+    #macys-button {
+      margin: 1.4em; } }
+
+#ws-button {
+  margin-bottom: 1em; }
+  @media screen and (min-width: 1024px) {
+    #ws-button {
+      margin: 1.4em; } }
 
 #forest {
   transform: scaleY(-1); }
